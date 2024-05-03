@@ -36,6 +36,18 @@ class SettingsScreen extends StatelessWidget {
             child: const Text(
               "Go To Settings Details Screen",
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.goNamed("home_details");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+              foregroundColor: Colors.white,
+            ),
+            child: const Text(
+              "Go To Home Details Screen",
+            ),
           )
         ],
       ),

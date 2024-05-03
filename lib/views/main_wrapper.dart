@@ -12,7 +12,7 @@ class MainWrapperScreen extends StatefulWidget {
 }
 
 class _MainWrapperScreenState extends State<MainWrapperScreen> {
-  int selectedIndex = 0;
+  // int selectedIndex = 0;
 
   void _goToBranch(int index) {
     widget.navigationShell.goBranch(
@@ -39,11 +39,11 @@ class _MainWrapperScreenState extends State<MainWrapperScreen> {
       ),
       bottomNavigationBar: SlidingClippedNavBar(
           backgroundColor: Colors.white,
-          selectedIndex: selectedIndex,
+          selectedIndex: widget.navigationShell.currentIndex,
           onButtonPressed: (index) {
-            setState(() {
-              selectedIndex = index;
-            });
+            // setState(() {
+            //   selectedIndex = index;
+            // });
             _goToBranch(index);
           },
           barItems: [

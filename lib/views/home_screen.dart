@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              context.goNamed("home_details");
+              context.pushNamed("home_details");
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.red,
